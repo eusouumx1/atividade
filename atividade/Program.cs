@@ -11,18 +11,8 @@ namespace atividade
     {
         static void Main()
         {
-            Empresa empresa1 = new();
-
-
-
-
-            Empregado jooj = new Empregado("Pedro", "Augusto", 45, DateTime.Now);
-            empresa1.EmpregadosLista.Add(jooj);
-
-
-            empresa1.Menu();
-            
-
+            Empresa Empresa = new();
+            Empresa.Menu();
         }
     }
 }
