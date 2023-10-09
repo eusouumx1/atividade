@@ -8,16 +8,16 @@ namespace atividade
 {
     internal class Empregado
     {
-        public string primeironome { get;private set; }
+        public string primeironome { get; private set; }
         public string sobrenome { get; private set; }
         private int matricula { get; set; }
         public int Matricula
         {
-            get 
+            get
             {
                 return matricula;
             }
-            set 
+            set
             {
                 matricula = value;
             }
@@ -31,9 +31,9 @@ namespace atividade
             {
                 return dataContratacao;
             }
-            set 
+            set
             {
-                dataContratacao = value; 
+                dataContratacao = value;
             }
         }
 
@@ -61,16 +61,16 @@ namespace atividade
             }
         }
 
-
         internal Empregado(string primeironome, string sobrenome, int idade, DateTime dataNascimento)
         {
-            this.primeironome = primeironome; 
+            this.primeironome = primeironome;
             this.sobrenome = sobrenome;
             this.idade = idade;
             this.dataNascimento = dataNascimento;
-                       
+
         }
-        internal Empregado(string primeironome, string sobrenome,int idade,  DateTime dataNascimento, int matricula, DateTime dataContratacao, double salarioMensal)
+
+        internal Empregado(string primeironome, string sobrenome, int idade, DateTime dataNascimento, int matricula, DateTime dataContratacao, double salarioMensal)
         {
             this.primeironome = primeironome;
             this.sobrenome = sobrenome;
@@ -79,15 +79,11 @@ namespace atividade
             this.matricula = matricula;
             this.SalarioMensal = salarioMensal;
             this.dataContratacao = dataContratacao;
-
         }
 
         internal void AumentarSalario()
         {
             SalarioMensal += SalarioMensal * 0.1;
         }
-
-        
-
     }
 }
